@@ -1,4 +1,4 @@
-(function (){
+(function($){
   $(document).ajaxStart( function () {
     if ($("#loadingbar").length === 0) {
       $("body").append("<div id='loadingbar'></div>")
@@ -12,4 +12,4 @@
       $(this).remove();
     });
   })
-})();
+})(jQuery);
